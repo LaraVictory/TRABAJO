@@ -1,0 +1,53 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html>
+<head>
+<title>Aplicaci&oacute;n de Valeria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="estilos.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>s
+<div data-role="page" id="inicio">
+  <div id="contenido">
+    <div id="imagen-principal"> <img src="museo.jpg"/> </div>
+    <h1>Buenos Aires Cultural</h1>
+    <p>Duraci&oacute;n aproximada del paseo: 5 horas.</p>
+    <p>Disfrute de las charlas mas representativas de la ciudad y asista a charlas con profesionales.</p>
+    <div id="imagen-mapa"> <img src="mapa.png"/> </div>
+    <a href="#popupMenu" class="ui-btn ui-btn-inline ui-corner-all" id="botoncito" data-rel="popup" data-transition="slideup">Iniciar el recorrido</a> </div>
+  <div data-role="popup" id="popupMenu">         
+    <ul data-role="listview" data-inset="true" style="width:400px;">
+      <li>Completar esta acci&oacute;n utilizando:</li>
+      <li><a href="#recorrido">Mapas para Apps</a></li>
+      <li><a href="">Recorridos por seguimiento de voz</a></li>
+    </ul>
+  </div>
+</div>
+<div data-role="page" id="recorrido">
+  <div id="contenido2">
+    <h1>Centro Cultural Recoleta</h1>
+    <p>Presione sobre los c&iacute;rculos azules para obtener m&aacute;s informaci&oacute;n sobre la sala y el tiempo a destinar en ella</p>
+    <p><strong>Duraci&oacute;n del recorrido: 5 horas.</strong></p>
+    <a href="#popupBasic" data-rel="popup" data-transition="pop" id="circuloazul2"><img src="botonazul.png" id="circulo2"/></a>
+    <div data-role="popup" id="popupBasic">
+      <h1 id="jorgeluisborges">S A L A &nbsp; E L &nbsp; A L E P H</h1>
+      <p>En ella se realizan exposiciones de arte moderno y puestas digitales como las de Proyecto Untitled.</p>
+      <p>Lleva un tiempo de aproximadamente 30 minutos para poder recorrerla toda.</p>
+      <p>Posee una capacidad para 500 personas sentadas y 100 de pie en los palcos.</p>
+    </div>
+    <img src="recorrido.png">    <a href="#popupDialog" class="ui-btn ui-btn-inline ui-corner-all" id="botoncito"data-rel="popup" data-position-to="origin" data-transition="pop" >Pausar</a> <a href="#finalizado" class="ui-btn ui-btn-inline ui-corner-all" id="botoncito">Finalizar</a> </div>
+  <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">     
+    <div role="main" id="pantalla2">         
+      <h3>Le has dado pausa a tu recorrido</h3>
+      <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Continuar</a>        <a href="#finalizado" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Finalizar</a>     </div>
+  </div>
+</div>
+<div data-role="page" id="finalizado">
+  <div id="contenido2"> <img src="finalizado.png"/> <a href="http://wwww.facebook.com" id="facebook" target="_blank"><img src="facebook.png" /></a> <a href="#inicio" class="ui-btn ui-btn-inline ui-corner-all" id="botoncito">Recorrer otra vez</a> <a href="" class="ui-btn ui-btn-inline ui-corner-all" id="botoncito">Cerrar y Salir</a> </div>
+</div>
+</body>
+</html>
